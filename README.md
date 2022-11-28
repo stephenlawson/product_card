@@ -15,7 +15,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -33,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Blog Posts Frontend](https://taylor1038.github.io/blog-posts-frontend/)
+- Solution URL: [Product Card Frontend](https://taylor1038.github.io/product_card/)
 
 ## My process
 
@@ -42,29 +41,33 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Screen readers in mind
 - CSS Grid
 - Mobile-first workflow
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The snippet below was a good way of making something that is intuitive to visually impaired users with screen readers. They would not be able to easily understand the repeated prices with a cross out of the older price without added context.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<span class="visually-hidden">Original Price:</span>
+<s>$169.99</s>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
 
 
 
