@@ -50,7 +50,7 @@ Users should be able to:
 
 The snippet below was a good way of making something that is intuitive to visually impaired users with screen readers. They would not be able to easily understand the repeated prices with a cross out of the older price without added context.
 
-To see how you can add code snippets, see below:
+
 
 ```html
 <span class="visually-hidden">Original Price:</span>
