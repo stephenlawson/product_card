@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Product Card Frontend](https://taylor1038.github.io/product_card/)
+- Solution URL: [Product Card Frontend](https://stephenlawson.github.io/product_card/)
 
 ## My process
 
